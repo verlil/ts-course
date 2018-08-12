@@ -6,3 +6,12 @@ let myAge: number = 24;
 
 let anything; //this will be wrong with flag ("noImplicitAny": true,) (?)
 anything = 12;
+
+function controlMe(isTrue: boolean) {
+    let result: number;
+    if (isTrue){
+        result = 12;
+    }
+    return result;
+}
+//with flag ("strictNullChecks": true,) it throws: (Variable 'result' is used before being assigned.)

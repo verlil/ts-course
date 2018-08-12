@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8997c6f4-d099-414c-9d6b-fb128c5051d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
@@ -51,9 +49,9 @@
         <counts>
           <entry key="html" value="6" />
           <entry key="js" value="2" />
-          <entry key="json" value="114" />
-          <entry key="ts" value="3295" />
-          <entry key="txt" value="107" />
+          <entry key="json" value="118" />
+          <entry key="ts" value="3439" />
+          <entry key="txt" value="179" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -61,9 +59,9 @@
           <entry key="HTML" value="6" />
           <entry key="JSON" value="22" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="107" />
-          <entry key="TypeScript" value="3295" />
-          <entry key="tsconfig" value="92" />
+          <entry key="PLAIN_TEXT" value="179" />
+          <entry key="TypeScript" value="3439" />
+          <entry key="tsconfig" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -83,36 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="86" selection-start-line="3" selection-start-column="86" selection-end-line="3" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="280">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js.map">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="88" lean-forward="true" selection-start-column="88" selection-end-column="88" />
-            </state>
-          </provider>
-          <provider editor-type-id="sourcemapFileViewerProvider" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="300">
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -135,8 +114,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/app.ts" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
       </list>
     </option>
   </component>
@@ -224,7 +203,7 @@
       <workItem from="1533639219833" duration="3436000" />
       <workItem from="1533919030708" duration="270000" />
       <workItem from="1533919370619" duration="557000" />
-      <workItem from="1534101967883" duration="8923000" />
+      <workItem from="1534101967883" duration="9964000" />
     </task>
     <task id="LOCAL-00001" summary="basic types">
       <created>1534102579215</created>
@@ -275,17 +254,31 @@
       <option name="project" value="LOCAL" />
       <updated>1534115482408</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="forbid compiling in case of errors, generate source map for debugging">
+      <created>1534116038807</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534116038810</updated>
+    </task>
+    <task id="LOCAL-00009" summary="noImplicitAny">
+      <created>1534116876690</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534116876690</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18285000" />
+    <option name="totallyTimeSpent" value="19326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1213" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24278438" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24278438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32866043" />
@@ -299,7 +292,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32968536" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24766356" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24766356" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -326,7 +319,9 @@
     <MESSAGE value="never, nullable" />
     <MESSAGE value="practice" />
     <MESSAGE value="example of error compiling" />
-    <option name="LAST_COMMIT_MESSAGE" value="example of error compiling" />
+    <MESSAGE value="forbid compiling in case of errors, generate source map for debugging" />
+    <MESSAGE value="noImplicitAny" />
+    <option name="LAST_COMMIT_MESSAGE" value="noImplicitAny" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/module_01_02/app.js">
@@ -364,21 +359,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="86" selection-start-line="3" selection-start-column="86" selection-end-line="3" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -389,6 +370,20 @@
         </state>
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
