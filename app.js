@@ -99,10 +99,20 @@ var complex = {
     }
 };
 console.log(complex.output(false));
-//custom types
+//We use keyword "type", so despite the fact that our types explanations are on the right side
+//of the "=" sign, we still just describing types of this type, not assigning them
 var complex2 = {
     data: [1, 5, 66.6],
     output: function (all) {
         return this.data;
     }
 };
+//union types
+var myRealRealAge = 27;
+myRealRealAge = "27";
+// myRealRealAge = true; // wrong
+//check types
+var finalValue = "A string";
+if (typeof finalValue === "string") {
+    console.log("string!");
+}
