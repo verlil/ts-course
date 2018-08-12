@@ -10,6 +10,20 @@ function controlMe(isTrue) {
     if (isTrue) {
         result = 12;
     }
+    else {
+        result = 13;
+    }
+    return result;
+}
+//with flag ("strictNullChecks": true,) it throws: (Variable 'result' is used before being assigned.)
+function controlMe2(isTrue, somethingElse) {
+    var result;
+    if (isTrue) {
+        result = 12;
+    }
+    else {
+        result = 13;
+    }
     return result;
 }
 //# sourceMappingURL=app.js.map
