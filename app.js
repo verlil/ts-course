@@ -128,5 +128,17 @@ var canAlsoBeNull; // at this point of time, this value is "undefined"
 canAlsoBeNull = null;
 var canBeNullAnyway = 13;
 var canThisBeAny = null; //this will be only of type null?
-console.log(typeof canThisBeAny);
 canThisBeAny = 13; //wrong?
+var bankAccount = {
+    money: 200,
+    deposit: function (value) {
+        this.money += value;
+    }
+};
+var myself = {
+    name: "Max",
+    bankAccount: bankAccount,
+    hobbies: ["Sports", "Books"]
+};
+myself.bankAccount['deposit'](300);
+console.log(myself);

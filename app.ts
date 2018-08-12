@@ -157,3 +157,22 @@ canAlsoBeNull = null;
 let canBeNullAnyway: number | null = 13;
 let canThisBeAny = null; //this will be only of type null?
 canThisBeAny = 13; //wrong?
+
+//practice
+type BankAccount = {money: number, deposit: (value: number) => void};
+let bankAccount: BankAccount = {
+    money: 200,
+    deposit(value: number): void {
+        this.money += value;
+    }
+}
+
+let myself: {name: string, hobbies: string[], bankAccount: BankAccount} = {
+    name: "Max",
+    bankAccount: bankAccount,
+    hobbies: ["Sports", "Books"]
+}
+
+myself.bankAccount['deposit'](300);
+
+console.log(myself);
