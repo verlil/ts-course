@@ -99,3 +99,10 @@ var complex = {
     }
 };
 console.log(complex.output(false));
+//custom types
+var complex2 = {
+    data: [1, 5, 66.6],
+    output: function (all) {
+        return this.data;
+    }
+};

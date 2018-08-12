@@ -117,5 +117,17 @@ let complex: { data: number[], output: (all: boolean) => number[] } = {
     output: function (all: boolean): number[] {
         return this.data;
     }
-}
+};
 console.log(complex.output(false));
+
+//custom types (type alias)
+type Complex = { data: number[], output: (all: boolean) => number[] };
+//We use keyword "type", so despite the fact that our types explanations are on the right side
+//of the "=" sign, we still just describing types of this type, not assigning them
+let complex2: Complex = {
+    data: [1, 5, 66.6],
+
+    output: function (all: boolean): number[] {
+        return this.data;
+    }
+};
