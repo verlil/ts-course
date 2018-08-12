@@ -139,6 +139,21 @@ myRealRealAge = "27";
 
 //check types
 let finalValue = "A string";
-if (typeof finalValue === "string"){
+if (typeof finalValue === "string") {
     console.log("string!");
 }
+
+//never
+function neverReturns(): never { // this function will never returns
+    throw new Error('An error');
+}
+
+// Nullable types
+let canBeNull = 12;
+//canBeNull = null; //remove the value, clear it, reset it
+//it will be wrong, if you enable flag ("strictNullChecks": true,)
+let canAlsoBeNull;// at this point of time, this value is "undefined"
+canAlsoBeNull = null;
+let canBeNullAnyway: number | null = 13;
+let canThisBeAny = null; //this will be only of type null?
+canThisBeAny = 13; //wrong?

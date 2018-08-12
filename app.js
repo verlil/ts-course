@@ -116,3 +116,17 @@ var finalValue = "A string";
 if (typeof finalValue === "string") {
     console.log("string!");
 }
+//never
+function neverReturns() {
+    throw new Error('An error');
+}
+// Nullable types
+var canBeNull = 12;
+//canBeNull = null; //remove the value, clear it, reset it
+//it will be wrong, if you enable flag ("strictNullChecks": true,)
+var canAlsoBeNull; // at this point of time, this value is "undefined"
+canAlsoBeNull = null;
+var canBeNullAnyway = 13;
+var canThisBeAny = null; //this will be only of type null?
+console.log(typeof canThisBeAny);
+canThisBeAny = 13; //wrong?
