@@ -31,6 +31,7 @@ books = [true, 'Think fast', false, 'Think slow'];
 var adress = ['Street', 1];
 //adress = [1, 'Street'];//Type 'number' is not assignable to type 'string'. Type 'string' is not assignable to type 'number'.
 //adress = ['Street', 1, 'Street'];//Type '[string, number, string]' is not assignable to type '[string, number]'.
+//enum
 var Color;
 (function (Color) {
     Color[Color["Gray"] = 0] = "Gray";
@@ -42,3 +43,59 @@ console.log(Color); // {0: "Gray", 7: "Green", 8: "Blue", Gray: 0, Green: 7, Blu
 console.log(Color.Gray); // 0
 console.log(myColor); // 7
 console.log(typeof myColor); // number
+//functions
+function returnMyName() {
+    return myName;
+    // return myAge; // wrong
+}
+console.log(returnMyName());
+// void
+function sayHello() {
+    console.log('Hello');
+}
+//argument types
+function multiply(value1, value2) {
+    return value1 * value2;
+}
+// console.log(multiply(2, 'Lilia')); // wrong
+console.log(multiply(2, 7));
+// function types
+var myMultiply;
+// In functions the order of the types did matter
+//myMultiply = sayHello;
+// Type '() => void' is not assignable to type '(val1: number, val2: number) => number'.
+// Type 'void' is not assignable to type 'number'.
+//myMultiply(); // Expected 2 arguments, but got 0.
+myMultiply = multiply;
+console.log(myMultiply(1, 3));
+// objects
+var userData = {
+    name: "Lilia",
+    age: 24
+};
+//userData = {};
+// Type '{}' is not assignable to type '{ name: string; age: number; }'.
+// Property 'name' is missing in type '{}'.
+// userData = {
+//     a: "Lilia",
+//     b: 24
+// };
+// Type '{ a: string; b: number; }' is not assignable to type '{ name: string; age: number; }'.
+// Object literal may only specify known properties, and 'a' does not exist in type '{ name: string; age: number; }'.
+userData = {
+    age: 24,
+    name: "Lilia"
+};
+// In objects the order isn't matter, but names of fields are.
+var userData2 = {
+    name: "Lilia",
+    age: 24
+};
+//complex object
+var complex = {
+    data: [1, 5, 66.6],
+    output: function (all) {
+        return this.data;
+    }
+};
+console.log(complex.output(false));
